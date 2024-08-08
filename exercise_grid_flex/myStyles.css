@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --clr-lightPurple: rgb(239 239 239);
+    --clr-white: rgb(255, 255, 255);
+    --clr-blck: rgb(0, 0, 0);
+    --clr-purple: rgb(151 148 242);
+    --clr-green: rgb(148 242 169);
+}
+
+.navigation{
+    background-color: var(--clr-lightPurple);
+    height: auto;
+    padding: 1rem;
+}
+
+.navigation .navWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation .navWrapper .logo a 
+/* .sideOption a */{
+    text-decoration: none;
+    color: var(--clr-blck);
+    font-size: 2rem;
+}
+var
+.navigation .navWrapper .logo{
+    font-size: 2rem;
+}
+
+#navBtn{
+    padding: 0.8rem 1.3rem;
+    border-radius: 25px;
+    border: transparent;
+    background-color: var(--clr-purple);
+}
+
+.navigation .navWrapper #navBtn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.navigation .navWrapper ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+/* .navigation .navWrapper ul li{} */
+
+.navigation .navWrapper ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--clr-blck);
+}
+
+.navigation .navWrapper h1 a:hover,
+.navigation .navWrapper ul li a:hover{
+    color: var(--clr-purple);
+    transition: ease 0.2s;
+}
+
+/* section img{
+    height: auto;
+    width: 100%;
+} */
+
+.contentWrapper{
+    width: 100%;
+    max-width: 75%;
+    margin: 3rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(200px, auto);
+}
+
+/* .content{
+    width: auto;
+}
+
+.content .card{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 25%;
+}
+
+.content .card img{
+    height: auto;
+    max-width: 100%;
+}
+
+.content .card header{
+    display: flex;
+    gap: 15px;
+}
+
+.content .card header p{
+    background-color: var(--clr-green);
+    color: black;
+    border-radius: 50px;
+    padding: 0 1rem;
+    margin-bottom: 5px;
+}
+
+.content .card .Paragraph{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.content .card aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .card aside button{
+    padding: 8px;
+    border-radius: 20px;
+    background-color: var(--clr-purple);
+    color: white;
+} */
+
+.content{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+.content{
+    box-shadow: 1px 1px 15px;
+}
+
+.content:hover{
+    transform: scale(1.1);
+    transition: ease 0.2s;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    /* z-index: 1; */
+}
+
+.content .card img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.content .card header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.content .card header p{
+    background-color: var(--clr-green);
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 0 0.9rem;
+    font-size: 14px;
+}
+
+.content .card .description{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.content .card aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .card aside p{
+    font-weight: 600;
+}
+
+.content .card aside button{
+    background-color: var(--clr-purple);
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 700;
+    border-color: var(--clr-purple);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .navigation{
+        padding: 1rem 0;
+        height: auto;
+    }
+
+    .navigation .navWrapper{
+      /* width: 100%; */
+      display: block;
+      text-align: center;
+    }
+
+    .navigation .navWrapper .logo{
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .navigation .navWrapper  #navBtn{
+    }
+
+    .navigation .navWrapper ul li:hover{
+        background-color: var(--clr-green);
+        transition: ease 0.5s;
+    }
+
+    .navigation .navWrapper ul{
+        display: block;
+    }
+
+    .navigation .navWrapper ul li{
+        padding: 0.8rem 0;
+    }
+
+    .contentWrapper{
+        display: block;
+    }
+
+    .contentWrapper .content{
+        margin-bottom: 15px;
+    }
+
+    .content .card img{
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .content .card header p{
+        font-size: 14px;
+    }
+
+    .content .card .description{
+        font-size: 13px;
+    }
+
+    .content .card aside p{
+        font-weight: 800;
+    }
+}
